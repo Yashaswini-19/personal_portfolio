@@ -44,27 +44,88 @@ import dbms from "../assets/dbms.png";
 import coa from "../assets/coa.png";
 import cn from "../assets/cn.jpg";
 import oops from "../assets/oops.webp";
+import jetson from "../assets/jetsonnano.png";
+import esp32 from "../assets/esp32.png";
+import primetime from "../assets/primetime.png";
+import innovus from "../assets/innovus.png";
+import dc from "../assets/designcompiler.png";
+import icc2 from "../assets/icc2.png";
+import dft from "../assets/dft.png";
+import sta from "../assets/sta.png";
+import pd from "../assets/physicaldesign.png";
 
 // Sample skills data
 const skillsData = [
   {
-    category: "VLSI",
+    category: "VLSI Design & Physical Design",
     items: [
-      { name: "Analog and Digital IC Design", logo: processorLogo },
+      { name: "RTL Design", logo: verilogLogo },
+      { name: "Digital IC Design", logo: processorLogo },
+      { name: "Physical Design", logo: pd },
+      { name: "Verilog HDL", logo: verilogLogo },
+      { name: "SystemVerilog", logo: systemverilogLogo },
       { name: "FPGA Development", logo: fpgaLogo },
       { name: "Xilinx Vivado", logo: vivadoLogo },
-      { name: "Cadence Virtuoso, Genus", logo: cadenceLogo },
+      { name: "Cadence Virtuoso", logo: cadenceLogo },
+      { name: "Cadence Genus", logo: cadenceLogo },
+      { name: "Cadence Innovus", logo: innovus },
+      { name: "Synopsys Design Compiler", logo: dc },
+      { name: "ICC2", logo: icc2 },
+      { name: "PrimeTime STA", logo: primetime },
+      { name: "Logic Synthesis", logo: dc },
+      { name: "Floorplanning", logo: pd },
+      { name: "Power Planning", logo: pd },
+      { name: "Placement", logo: pd },
+      { name: "Clock Tree Synthesis", logo: sta },
+      { name: "Routing", logo: pd },
+      { name: "Static Timing Analysis", logo: sta },
+      { name: "Timing Closure", logo: sta },
+      { name: "Physical Verification", logo: pd },
+      { name: "Design Rule Checks", logo: pd },
+      { name: "DFT Fundamentals", logo: dft },
       { name: "Multisim", logo: multisimLogo },
     ],
   },
+
   {
-    category: "Digital Logic Verification",
+    category: "Verification & EDA Tools",
     items: [
-      { name: "Verilog", logo: verilogLogo },
       { name: "SystemVerilog", logo: systemverilogLogo },
       { name: "EDA Playground", logo: edaLogo },
+      { name: "Functional Verification", logo: edaLogo },
+      { name: "Testbench Development", logo: edaLogo },
+      { name: "Simulation", logo: edaLogo },
+      { name: "Debugging", logo: edaLogo },
+      { name: "Assertion Based Verification", logo: edaLogo },
     ],
   },
+
+  {
+    category: "Embedded Systems, IoT & Edge AI",
+    items: [
+      { name: "Arduino", logo: arduino },
+      { name: "ESP32", logo: esp32 },
+      { name: "Raspberry Pi", logo: rasp },
+      { name: "NVIDIA Jetson Nano", logo: jetson },
+      { name: "LPC2148", logo: lpc },
+      { name: "PCB Design", logo: pcb },
+      { name: "KiCad", logo: kicad },
+      { name: "TinkerCad", logo: tinkercad },
+      { name: "Sensor Interfacing", logo: arduino },
+      { name: "Embedded C", logo: c },
+    ],
+  },
+
+  {
+    category: "Signal Processing",
+    items: [
+      { name: "Image Processing", logo: imgLogo },
+      { name: "Video Processing", logo: imgLogo },
+      { name: "MATLAB", logo: matlabLogo },
+      { name: "Simulink", logo: simulinkLogo },
+    ],
+  },
+
   {
     category: "Antennas",
     items: [
@@ -72,25 +133,7 @@ const skillsData = [
       { name: "Ansys HFSS", logo: ansysLogo },
     ],
   },
-  {
-    category: "Signal Processing",
-    items: [
-      { name: "Image and Video Processing", logo: imgLogo },
-      { name: "MATLAB", logo: matlabLogo },
-      { name: "Simulink", logo: simulinkLogo },
-    ],
-  },
-  {
-    category: "IOT",
-    items: [
-      { name: "Arduino Programming", logo: arduino },
-      { name: "Raspberry Pi", logo: rasp },
-      { name: "LPC2148", logo: lpc },
-      { name: "PCB Design", logo: pcb },
-      { name: "TinkerCad", logo: tinkercad },
-      { name: "KiCad", logo: kicad },
-    ],
-  },
+
   {
     category: "Programming Languages",
     items: [
@@ -99,37 +142,24 @@ const skillsData = [
       { name: "Python", logo: python },
     ],
   },
+
   {
     category: "Web Development",
     items: [
-      { name: "ReactJS", logo: reactjs },
-      { name: "NodeJS", logo: nodejs },
-      { name: "ExpressJS", logo: expressjs },
-      { name: "Flask", logo: flask },
-      { name: "MongoDB", logo: mongodb },
-      { name: "Embedded JS", logo: ejs },
-      { name: "Javascript", logo: javascript },
-      { name: "Tailwind CSS", logo: tailwind },
-      { name: "CSS", logo: css },
-      { name: "Bootstrap", logo: boot },
       { name: "HTML", logo: html },
+      { name: "CSS", logo: css },
+      { name: "JavaScript", logo: javascript },
     ],
   },
+
   {
-    category: "Version Control",
-    items: [
-      { name: "Git", logo: git },
-      { name: "GitHub", logo: github },
-    ],
-  },
-  {
-    category: "Technical Skills",
+    category: "Core Computer Science",
     items: [
       { name: "Operating Systems", logo: os },
       { name: "Database Management Systems", logo: dbms },
       { name: "Computer Networks", logo: cn },
       { name: "Object Oriented Programming", logo: oops },
-      { name: "Computer Organization and Architecture", logo: coa },
+      { name: "Computer Organization & Architecture", logo: coa },
     ],
   },
 ];
