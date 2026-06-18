@@ -33,18 +33,18 @@ function App() {
                 speed={50}
                 typingDelay={500}
                 cursorRenderer={(cursor) => <h1>{cursor}</h1>}
-                text={["Hey there! I'm Satwik"]}
+                text={["Hey there! I'm Yashaswini"]}
                 eraseDelay={5000}
                 eraseSpeed={0}
               />
             </h1>
-            <p className="mt-4 text-gray-50">Physical Design Engineer</p>
+            <p className="mt-4 text-gray-50">RTL Design Engineer</p>
             <p className="mt-4 text-gray-400">
-              Physical Design Engineer with 4nm RTL2GDS experience at Samsung
-              Semiconductor. Skilled in floorplanning, placement, CTS, routing,
-              STA, and physical verification using Fusion Compiler and Calibre.
-              Interested in VLSI roles, especially Physical Design, Physical
-              Verification, or STA.
+              RTL Design Engineer at Intel with experience in RTL design, 
+              digital verification, FPGA implementation, and VLSI system development. 
+              Skilled in Verilog, SystemVerilog, UVM, Cadence Virtuoso, Synopsys tools, 
+              and FPGA workflows. Interested in VLSI roles, especially Logic Design, 
+              RTL Development, Verification, ASIC Design, and Physical Design.
             </p>
           </motion.div>
 
@@ -58,7 +58,7 @@ function App() {
             <div className="relative flex justify-center items-center">
               <img
                 src={profileImage}
-                alt="Satwik Kamath"
+                alt="Yashaswini M"
                 className="rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 shadow-2xl transform transition-transform duration-500 ease-in-out hover:scale-110 hover:rotate-3"
               />
             </div>
@@ -76,22 +76,22 @@ function App() {
           <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://github.com/satwikkamath"
+              href="https://github.com/Yashaswini-19"
               className="text-gray-400 hover:scale-110 transition-transform"
             >
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/satwik-kamath-87b2a1229/"
+              href="https://www.linkedin.com/in/yashaswini-m-331a632b6"
               className="text-gray-400 hover:scale-110 transition-transform"
             >
               LinkedIn
             </a>
             <a
-              href="https://www.instagram.com/satwik_kamath/"
+              href="https://www.youtube.com/@inside-vlsi"
               className="text-gray-400 hover:scale-110 transition-transform"
             >
-              Instagram
+              Youtube
             </a>
           </div>
         </footer>
