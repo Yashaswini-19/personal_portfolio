@@ -1,27 +1,32 @@
-# Portfolio Website
+Yashaswini M – Personal Portfolio
 
-Welcome to my personal portfolio! This site is a reflection of my journey as an ECE student, highlighting my passion and projects in analog and digital IC design, alongside my expertise in MERN stack web development. Explore my work and learn more about my skills and accomplishments.
+Welcome to my personal portfolio website! This portfolio showcases my academic journey, technical skills, projects, achievements, and professional experience in the fields of VLSI Design, Physical Design, Embedded Systems, IoT, and Software Development.
 
-## Table of Contents
+🚀 About Me
 
-- [About](#about)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
+I am Yashaswini M, an M.Tech VLSI Design student at Vellore Institute of Technology (VIT) with a strong passion for Semiconductor Design, Physical Design, RTL Design, FPGA Development, and Embedded Systems.
 
-## About
+Currently, I am pursuing my Master's degree with a CGPA of 9.15 and have secured an Intel Internship through Campus Placement. My interests span across VLSI, Embedded Systems, AI at the Edge, and Full Stack Development.
 
-This is a single-page portfolio website built with React and Tailwind CSS. It includes sections for Analog Projects, Digital Projects, Design Verification Projects, IoT Projects, Frontend Web Development Projects, Full Stack Web Development Projects, Full Stack + ML Projects, and ML Projects. The website features smooth transitions, animations, and a dark theme.
+🌐 Portfolio Features
 
-## Features
+Responsive modern UI
+Interactive skills showcase
+Education timeline
+Experience section
+Project portfolio
+Achievements and extracurricular activities
+Contact information
+Smooth animations and transitions
 
-- Smooth dropdown transitions for project sections
-- Dark theme with responsive design
-- Animated sections and transitions
-- Interactive project cards with GitHub links
+📫 Contact
 
-## Technologies Used
+Yashaswini M
 
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [JavaScript ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [GitHub Pages](https://pages.github.com/) (for hosting)
+📧 Email: your-yashaswimim2004@gmail.com
+
+💼 LinkedIn: https://www.linkedin.com/in/yashaswini-m1234/
+
+💻 GitHub: https://github.com/Yashaswini-19
+
+⭐ If you like this portfolio, feel free to fork the repository and give it a star!
