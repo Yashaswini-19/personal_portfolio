@@ -27,7 +27,7 @@ function Navbar() {
             className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-gray-400 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-3"
           />
           <span className="ml-3 text-white text-xl md:text-2xl font-bold">
-            Satwik Kamath
+            Yashaswini M
           </span>
         </Link>
 
