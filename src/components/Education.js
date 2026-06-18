@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import school from "../assets/school.png";
 import college from "../assets/college.png";
-import msrit from "../assets/msrit.png";
+import msrit from "../assets/msrit.jpg";
 import vit from "../assets/vit.png";
 
 function Education() {
