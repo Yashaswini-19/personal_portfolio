@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import school from "../assets/school.jpg";
-import college from "../assets/college.jpg";
-import msrit from "../assets/msrit.jpg";
-import vit from "../assets/vit.jpg";
+import school from "../assets/school.png";
+import college from "../assets/college.png";
+import msrit from "../assets/msrit.png";
+import vit from "../assets/vit.png";
 
 function Education() {
   const [isVisible, setIsVisible] = useState({
