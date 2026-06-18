@@ -4,7 +4,7 @@ import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Experience from "./components/Experience"; // Import the Experience component
 import React from "react";
-import profileImage from "./assets/profile.jpg";
+import profileImage from "./assets/profile.png";
 import { motion } from "framer-motion";
 import Typing from "react-typing-effect";
 
