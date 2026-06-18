@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 
-// Add the paths to your logo images
-import samsungLogo from "../assets/samsung.jpeg"; // Replace with the correct path to your Samsung logo
-import stardustLogo from "../assets/sd.png"; // Replace with the correct path to your STARDUST logo
-import ssirLogo from "../assets/ssir.png"; // Replace with the correct path to your STARDUST logo
+import intelLogo from "../assets/intel.png";
+import tvsLogo from "../assets/tvs.png";
+import arkashineLogo from "../assets/arkashine.png";
+import edhithaLogo from "../assets/edhitha.png";
 
 function Experience() {
   const [isVisible, setIsVisible] = useState({
-    samsung: false,
-    stardust: false,
+    intel: false,
+    tvs: false,
+    arkashine: false,
+    edhitha: false,
   });
 
   useEffect(() => {
@@ -18,14 +20,13 @@ function Experience() {
       (entries) => {
         entries.forEach((entry) => {
           const name = entry.target.dataset.name;
+
           if (entry.isIntersecting) {
-            // When the card comes into view, make it visible
             setIsVisible((prev) => ({
               ...prev,
               [name]: true,
             }));
           } else {
-            // Reset visibility when it leaves the viewport
             setIsVisible((prev) => ({
               ...prev,
               [name]: false,
@@ -34,13 +35,11 @@ function Experience() {
         });
       },
       {
-        threshold: 0.2, // Trigger when 20% of the card is visible
+        threshold: 0.2,
       }
     );
 
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
+    sections.forEach((section) => observer.observe(section));
 
     return () => {
       sections.forEach((section) => observer.unobserve(section));
@@ -52,93 +51,146 @@ function Experience() {
       <h2 className="text-4xl font-bold text-center text-white mb-12">
         Experience
       </h2>
+
       <div className="flex flex-wrap gap-8 justify-center">
-        {/* Experience Card 1 */}
+        {/* Intel */}
         <div
           className={`experience-card p-6 rounded-lg bg-gray-800 shadow-lg w-full sm:w-80 md:w-96 transform transition-transform duration-700 ease-in-out ${
-            isVisible.samsung
+            isVisible.intel
               ? "translate-x-0 opacity-100"
               : "-translate-x-10 opacity-0"
           } hover:scale-105`}
-          data-name="samsung"
+          data-name="intel"
         >
           <div className="flex justify-center mb-4">
             <img
-              src={ssirLogo}
-              alt="Samsung Logo"
-              className="w-20 h-20 object-cover rounded-full" // Rounded image
+              src={intelLogo}
+              alt="Intel"
+              className="w-20 h-20 object-cover rounded-full"
             />
           </div>
+
           <h3 className="text-2xl font-bold mb-2 text-center">
-            Samsung Semiconductor India Research (SSIR) - Bangalore
+            Intel Corporation
           </h3>
+
           <h4 className="text-xl font-bold mb-4 text-center">
-            Physical Design Intern - Jan 2025 to July 2025
+            VLSI Intern (Campus Placement)
           </h4>
-        </div>
-        {/* Experience Card 1 */}
-        <div
-          className={`experience-card p-6 rounded-lg bg-gray-800 shadow-lg w-full sm:w-80 md:w-96 transform transition-transform duration-700 ease-in-out ${
-            isVisible.samsung
-              ? "translate-x-0 opacity-100"
-              : "-translate-x-10 opacity-0"
-          } hover:scale-105`}
-          data-name="samsung"
-        >
-          <div className="flex justify-center mb-4">
-            <img
-              src={samsungLogo}
-              alt="Samsung Logo"
-              className="w-20 h-20 object-cover rounded-full" // Rounded image
-            />
-          </div>
-          <h3 className="text-2xl font-bold mb-2 text-center">Samsung R&D</h3>
-          <h4 className="text-xl font-bold mb-4 text-center">
-            Samsung PRISM Intern - Aug 2023 to Aug 2024
-          </h4>
+
           <p className="text-white">
-            Work done:
+            Highlights:
             <ul className="list-disc list-inside mt-2">
-              <li>
-                Input enhancement for Intra prediction for generic video codec -
-                Proposed a Pix2Pix model for deforming input, enhancing the
-                input to the Video Codec.
-              </li>
+              <li>Selected through campus placement drive</li>
+              <li>Working in VLSI Design and Semiconductor Technologies</li>
+              <li>Applying RTL, Verification and Physical Design concepts</li>
             </ul>
           </p>
         </div>
 
-        {/* Experience Card 2 */}
+        {/* TVS */}
         <div
           className={`experience-card p-6 rounded-lg bg-gray-800 shadow-lg w-full sm:w-80 md:w-96 transform transition-transform duration-700 ease-in-out ${
-            isVisible.stardust
+            isVisible.tvs
               ? "translate-x-0 opacity-100"
               : "-translate-x-10 opacity-0"
           } hover:scale-105`}
-          data-name="stardust"
+          data-name="tvs"
         >
           <div className="flex justify-center mb-4">
             <img
-              src={stardustLogo}
-              alt="STARDUST Logo"
-              className="w-20 h-20 object-cover rounded-full" // Rounded image
+              src={tvsLogo}
+              alt="TVS Motors"
+              className="w-20 h-20 object-cover rounded-full"
             />
           </div>
-          <h3 className="text-2xl font-bold mb-2 text-center">STARDUST_RIT</h3>
+
+          <h3 className="text-2xl font-bold mb-2 text-center">
+            TVS Motor Company
+          </h3>
+
           <h4 className="text-xl font-bold mb-4 text-center">
-            Avionics Head - Oct 2023 to Jun 2024
+            Engineering Intern | Jul 2024 - Sep 2024
           </h4>
-          <h4 className="text-xl font-bold mb-4 text-center">
-            Chief System Engineer - Jan 2023 to Oct 2023
-          </h4>
-          <h4 className="text-xl font-bold mb-4 text-center">
-            Sub System Engineer - Feb 2022 to Jan 2023
-          </h4>
+
           <p className="text-white">
-            Work done:
+            Work Done:
             <ul className="list-disc list-inside mt-2">
-              <li>Qualified for 2nd round in IROC-2024</li>
-              <li>Part of the team conducting Antenna Building Workshop</li>
+              <li>Reverse-engineered instrument cluster PCBs</li>
+              <li>Performed PCB analysis and cost estimation</li>
+              <li>Worked with SMT manufacturing processes</li>
+            </ul>
+          </p>
+        </div>
+
+        {/* Arkashine */}
+        <div
+          className={`experience-card p-6 rounded-lg bg-gray-800 shadow-lg w-full sm:w-80 md:w-96 transform transition-transform duration-700 ease-in-out ${
+            isVisible.arkashine
+              ? "translate-x-0 opacity-100"
+              : "-translate-x-10 opacity-0"
+          } hover:scale-105`}
+          data-name="arkashine"
+        >
+          <div className="flex justify-center mb-4">
+            <img
+              src={arkashineLogo}
+              alt="Arkashine"
+              className="w-20 h-20 object-cover rounded-full"
+            />
+          </div>
+
+          <h3 className="text-2xl font-bold mb-2 text-center">
+            Arkashine Innovations
+          </h3>
+
+          <h4 className="text-xl font-bold mb-4 text-center">
+            Embedded Systems Intern | Mar 2024 - Jul 2024
+          </h4>
+
+          <p className="text-white">
+            Work Done:
+            <ul className="list-disc list-inside mt-2">
+              <li>Developed Raspberry Pi based soil analysis system</li>
+              <li>Integrated EC and pH sensors</li>
+              <li>Built Python-based TFT GUI for monitoring and analysis</li>
+            </ul>
+          </p>
+        </div>
+
+        {/* Edhitha UAV Team */}
+        <div
+          className={`experience-card p-6 rounded-lg bg-gray-800 shadow-lg w-full sm:w-80 md:w-96 transform transition-transform duration-700 ease-in-out ${
+            isVisible.edhitha
+              ? "translate-x-0 opacity-100"
+              : "-translate-x-10 opacity-0"
+          } hover:scale-105`}
+          data-name="edhitha"
+        >
+          <div className="flex justify-center mb-4">
+            <img
+              src={edhithaLogo}
+              alt="Edhitha UAV Team"
+              className="w-20 h-20 object-cover rounded-full"
+            />
+          </div>
+
+          <h3 className="text-2xl font-bold mb-2 text-center">
+            Edhitha UAV Team
+          </h3>
+
+          <h4 className="text-xl font-bold mb-4 text-center">
+            UAV Systems & Navigation Team Member
+          </h4>
+
+          <p className="text-white">
+            Highlights:
+            <ul className="list-disc list-inside mt-2">
+              <li>Worked on autonomous UAVs and navigation systems</li>
+              <li>Contributed to international SUAS competition</li>
+              <li>Achieved 15th place among 71 global teams</li>
+              <li>Won $500 cash prize</li>
+              <li>Received Just Joe Sportsmanship Award</li>
             </ul>
           </p>
         </div>
