@@ -33,7 +33,7 @@ function App() {
                 speed={50}
                 typingDelay={500}
                 cursorRenderer={(cursor) => <h1>{cursor}</h1>}
-                text={["Hey there! I'm Yashaswini"]}
+                text={["Hey there! I'm Yashaswini M"]}
                 eraseDelay={5000}
                 eraseSpeed={0}
               />
